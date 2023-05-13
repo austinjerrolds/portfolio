@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Austin Jerrolds - ECE 4140 Dissection">
+    <meta name="description" content="">
+    <title>Teardown</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Teardown.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 5.9.10, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "Site1"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Teardown">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-overlap u-overlap-transparent u-xl-mode" data-lang="en"><header class="u-clearfix u-gradient u-header u-header" id="sec-af68"><div class="u-clearfix u-sheet u-sheet-1">
+        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1">
+          <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+            <a class="u-button-style u-custom-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-white" href="Introduction.html" style="padding: 10px 12px;">Introduction</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-white" href="Retail-Info.html" style="padding: 10px 12px;">Retail Info</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-white" href="Teardown.html" style="padding: 10px 12px;">Teardown</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-white" href="Product-Analysis.html" style="padding: 10px 12px;">Product Analysis</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-2-base u-text-hover-white" href="Product-Reassembly.html" style="padding: 10px 12px;">Product Reassembly</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Introduction.html">Introduction</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Retail-Info.html">Retail Info</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Teardown.html">Teardown</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Product-Analysis.html">Product Analysis</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Product-Reassembly.html">Product Reassembly</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+        <h3 class="u-align-right u-text u-text-default u-text-1">CASIO fx-260 SOLAR II</h3>
+        <h1 class="u-align-left u-text u-text-default u-text-2">Austin Jerrolds - ECE 4140 Dissection</h1>
+        <img class="u-image u-image-default u-image-1" src="images/1599902_SPR_ecommthumbnail1.jpg" alt="" data-image-width="171" data-image-height="297">
+      </div></header>
+    <section class="u-align-center u-clearfix u-section-1" id="sec-d38a">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h3 class="u-text u-text-default u-text-1">Teardown</h3>
+        <div class="u-carousel u-gallery u-layout-carousel u-lightbox u-no-transition u-show-text-on-hover u-gallery-1" id="carousel-d2d5" data-interval="5000" data-u-ride="carousel">
+          <ol class="u-absolute-hcenter u-carousel-indicators u-carousel-indicators-1">
+            <li data-u-target="#carousel-d2d5" data-u-slide-to="0" class="u-active u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+            <li data-u-target="#carousel-d2d5" data-u-slide-to="1" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+            <li data-u-target="#carousel-d2d5" data-u-slide-to="2" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+            <li data-u-target="#carousel-d2d5" data-u-slide-to="3" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+            <li data-u-target="#carousel-d2d5" data-u-slide-to="4" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+            <li data-u-target="#carousel-d2d5" data-u-slide-to="5" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+            <li data-u-target="#carousel-d2d5" data-u-slide-to="6" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+            <li data-u-target="#carousel-d2d5" data-u-slide-to="7" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+            <li data-u-target="#carousel-d2d5" data-u-slide-to="8" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+            <li data-u-target="#carousel-d2d5" data-u-slide-to="9" class="u-grey-70 u-shape-circle" style="width: 10px; height: 10px;"></li>
+          </ol>
+          <div class="u-carousel-inner u-gallery-inner" role="listbox">
+            <div class="u-active u-carousel-item u-gallery-item u-carousel-item-1">
+              <div class="u-back-slide" data-image-width="4032" data-image-height="3024">
+                <img class="u-back-image u-expanded u-image-contain" src="images/IMG-1738.jpg" alt="">
+              </div>
+              <div class="u-align-center u-over-slide u-valign-middle u-over-slide-1">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text">Here is the calculator and its case</p>
+              </div>
+            </div>
+            <div class="u-carousel-item u-gallery-item u-carousel-item-2" data-image-width="1200" data-image-height="1600">
+              <div class="u-back-slide">
+                <img class="u-back-image u-expanded u-image-contain" src="images/circles1.png">
+              </div>
+              <div class="u-align-center u-over-slide u-valign-middle u-over-slide-2">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text">First I removed the six screws on the back of the calculator</p>
+              </div>
+              <style data-mode="XL"></style>
+              <style data-mode="LG"></style>
+              <style data-mode="MD"></style>
+              <style data-mode="SM"></style>
+              <style data-mode="XS"></style>
+            </div>
+            <div class="u-carousel-item u-gallery-item u-carousel-item-3" data-image-width="4032" data-image-height="3024">
+              <div class="u-back-slide">
+                <img class="u-back-image u-expanded u-image-contain" src="images/IMG-1741.jpg">
+              </div>
+              <div class="u-align-center u-over-slide u-valign-middle u-over-slide-3">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text">Here are those screws removed</p>
+              </div>
+              <style data-mode="XL"></style>
+              <style data-mode="LG"></style>
+              <style data-mode="MD"></style>
+              <style data-mode="SM"></style>
+              <style data-mode="XS"></style>
+            </div>
+            <div class="u-carousel-item u-gallery-item u-carousel-item-4" data-image-width="1600" data-image-height="1200">
+              <div class="u-back-slide">
+                <img class="u-back-image u-expanded u-image-contain" src="images/circles21.png" alt="">
+              </div>
+              <div class="u-align-center u-over-slide u-valign-middle u-over-slide-4">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text">From here I removed the back plate exposing the PCB. Next I removed the plastic heat stakes by breaking them.</p>
+              </div>
+              <style data-mode="XL"></style>
+              <style data-mode="LG"></style>
+              <style data-mode="MD"></style>
+              <style data-mode="SM"></style>
+              <style data-mode="XS"></style>
+            </div>
+            <div class="u-carousel-item u-gallery-item u-carousel-item-5" data-image-width="4032" data-image-height="3024">
+              <div class="u-back-slide">
+                <img class="u-back-image u-expanded u-image-contain" src="images/IMG-1744.jpg">
+              </div>
+              <div class="u-align-center u-over-slide u-valign-middle u-over-slide-5">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text">Now that the stakes are removed I can take the PCB out of the front cover.</p>
+              </div>
+              <style data-mode="XL"></style>
+              <style data-mode="LG"></style>
+              <style data-mode="MD"></style>
+              <style data-mode="SM"></style>
+              <style data-mode="XS"></style>
+            </div>
+            <div class="u-carousel-item u-gallery-item u-carousel-item-6" data-image-width="4032" data-image-height="3024">
+              <div class="u-back-slide">
+                <img class="u-back-image u-expanded u-image-contain" src="images/IMG-1745.jpg">
+              </div>
+              <div class="u-align-center u-over-slide u-valign-middle u-over-slide-6">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text">Here you can see the membrane that "connects" the buttons to the PCB.</p>
+              </div>
+              <style data-mode="XL"></style>
+              <style data-mode="LG"></style>
+              <style data-mode="MD"></style>
+              <style data-mode="SM"></style>
+              <style data-mode="XS"></style>
+            </div>
+            <div class="u-carousel-item u-gallery-item u-carousel-item-7" data-image-width="4032" data-image-height="3024">
+              <div class="u-back-slide">
+                <img class="u-back-image u-expanded u-image-contain" src="images/IMG-1746.jpg">
+              </div>
+              <div class="u-align-center u-over-slide u-valign-middle u-over-slide-7">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text">After taking out the membrane you can see the back of the buttons.</p>
+              </div>
+              <style data-mode="XL"></style>
+              <style data-mode="LG"></style>
+              <style data-mode="MD"></style>
+              <style data-mode="SM"></style>
+              <style data-mode="XS"></style>
+            </div>
+            <div class="u-carousel-item u-gallery-item u-carousel-item-8" data-image-width="4032" data-image-height="3024">
+              <div class="u-back-slide">
+                <img class="u-back-image u-expanded u-image-contain" src="images/IMG-1747.jpg">
+              </div>
+              <div class="u-align-center u-over-slide u-valign-middle u-over-slide-8">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text">Those buttons just fall out and I am left with the empty front cover.</p>
+              </div>
+              <style data-mode="XL"></style>
+              <style data-mode="LG"></style>
+              <style data-mode="MD"></style>
+              <style data-mode="SM"></style>
+              <style data-mode="XS"></style>
+            </div>
+            <div class="u-carousel-item u-gallery-item u-carousel-item-9" data-image-width="4032" data-image-height="3024">
+              <div class="u-back-slide">
+                <img class="u-back-image u-expanded u-image-contain" src="images/IMG-1748.jpg">
+              </div>
+              <div class="u-align-center u-over-slide u-valign-middle u-over-slide-9">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text">Here is the front of the PCB without the front cover.</p>
+              </div>
+              <style data-mode="XL"></style>
+              <style data-mode="LG"></style>
+              <style data-mode="MD"></style>
+              <style data-mode="SM"></style>
+              <style data-mode="XS"></style>
+            </div>
+            <div class="u-carousel-item u-gallery-item u-carousel-item-10" data-image-width="4032" data-image-height="3024">
+              <div class="u-back-slide">
+                <img class="u-back-image u-expanded u-image-contain" src="images/IMG-1743.jpg">
+              </div>
+              <div class="u-align-center u-over-slide u-valign-middle u-over-slide-10">
+                <h3 class="u-gallery-heading"></h3>
+                <p class="u-gallery-text">Here is the back of the PCB. From here I can see the processor under the black adhesive that holds it in place.</p>
+              </div>
+              <style data-mode="XL"></style>
+              <style data-mode="LG"></style>
+              <style data-mode="MD"></style>
+              <style data-mode="SM"></style>
+              <style data-mode="XS"></style>
+            </div>
+          </div>
+          <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-1" href="#carousel-d2d5" role="button" data-u-slide="prev">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+            </span>
+          </a>
+          <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-2" href="#carousel-d2d5" role="button" data-u-slide="next">
+            <span aria-hidden="true">
+              <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+            </span>
+            <span class="sr-only">
+              <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-e54f"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Austin Jerrolds - Tennessee Tech Spring 2023</p>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+        <span>Website Templates</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="" target="_blank">
+        <span>Website Builder Software</span>
+      </a>. 
+    </section>
+  
+</body></html>
