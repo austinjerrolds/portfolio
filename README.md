@@ -1,5 +1,4 @@
-# portfolio
-Austin Jerrolds - School Portfolio
+# Project Portfolio
 
 CASIO-fx260 solar Embedded Systems Dissection Website
 
